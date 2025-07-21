@@ -69,7 +69,7 @@ const Navbar: React.FC = () => {
           <div className="flex justify-between items-center h-16">
             <Link to="/" className="flex items-center space-x-2">
               <Dumbbell className="h-8 w-8 text-[#d98e38]" />
-              <span className="text-xl font-bold text-white">SukhGarewalFitness</span>
+              <span className="text-xl font-bold text-white">SukhSinghFitnessClub</span>
             </Link>
 
             {/* Desktop Menu */}

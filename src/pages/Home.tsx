@@ -47,7 +47,7 @@ const Home: React.FC = () => {
             <span className="text-[#d98e38] block">Body & Mind</span>
           </h1>
           <p className="text-xl md:text-2xl text-gray-300 mb-8 max-w-2xl mx-auto">
-            Join FitZone and unlock your potential with our world-class facilities, 
+            Join SukhSinghFitnessClub and unlock your potential with our world-class facilities, 
             expert trainers, and supportive community.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -73,7 +73,7 @@ const Home: React.FC = () => {
         <div className="max-w-7xl mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-white mb-4">
-              Why Choose FitZone?
+              Why Choose SukhSinghFitnessClub ?
             </h2>
             <p className="text-xl text-gray-400">
               Everything you need to achieve your fitness goals
@@ -108,7 +108,7 @@ const Home: React.FC = () => {
             Ready to Start Your Fitness Journey?
           </h2>
           <p className="text-xl text-orange-100 mb-8">
-            Join thousands of members who have transformed their lives at FitZone
+            Join to transform your mind and body at SukhSinghFitnessClub
           </p>
           <Link
             to="/plans"

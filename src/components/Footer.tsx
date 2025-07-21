@@ -56,7 +56,7 @@ const Footer: React.FC = () => {
           <div className="space-y-4">
             <div className="flex items-center space-x-2">
               <Dumbbell className="h-8 w-8 text-[#d98e38]" />
-              <span className="text-2xl font-bold text-white">SukhGarewalFitness</span>
+              <span className="text-2xl font-bold text-white">SukhSinghFitnessClub</span>
             </div>
             <p className="text-gray-300 leading-relaxed">
               Transform your body and mind with our world-class facilities, 
@@ -114,13 +114,14 @@ const Footer: React.FC = () => {
               <div className="flex items-start space-x-3">
                 <MapPin className="h-5 w-5 text-[#d98e38] mt-0.5 flex-shrink-0" />
                 <span className="text-gray-300">
-                  123 Fitness Street<br />
-                  Gym City, GC 12345
+                  55 Gard Rd,
+                  Mount Cottrell,
+                  Australia VIC 3024
                 </span>
               </div>
               <div className="flex items-center space-x-3">
                 <Phone className="h-5 w-5 text-[#d98e38] flex-shrink-0" />
-                <span className="text-gray-300">+1 (555) 123-4567</span>
+                <span className="text-gray-300">+61447361547</span>
               </div>
               <div className="flex items-center space-x-3">
                 <Mail className="h-5 w-5 text-[#d98e38] flex-shrink-0" />
@@ -129,8 +130,8 @@ const Footer: React.FC = () => {
               <div className="flex items-start space-x-3">
                 <Clock className="h-5 w-5 text-[#d98e38] mt-0.5 flex-shrink-0" />
                 <div className="text-gray-300">
-                  <div>Mon-Fri: 5:00 AM - 11:00 PM</div>
-                  <div>Sat-Sun: 6:00 AM - 10:00 PM</div>
+                  <div>Mon-Fri</div>
+                  <div>24x7 For Clients </div>
                 </div>
               </div>
             </div>
@@ -141,7 +142,7 @@ const Footer: React.FC = () => {
         <div className="border-t border-[#2b3a33] mt-12 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <div className="text-gray-300 text-sm">
-              © {currentYear} FitZone. All rights reserved.
+              © 2020 SukhSinghFitnessClub. All rights reserved.
             </div>
             <div className="flex space-x-6 text-sm">
               <a href="#" className="text-gray-300 hover:text-[#d98e38] transition-colors">

@@ -27,21 +27,25 @@ const About: React.FC = () => {
 
   const team = [
     {
-      name: 'Sarah Johnson',
-      role: 'Head Trainer & Founder',
-      image: 'https://images.pexels.com/photos/3823207/pexels-photo-3823207.jpeg?auto=compress&cs=tinysrgb&w=400&h=400&fit=crop',
+      name: 'Rohan Rawat',
+      role: 'Manager',
       bio: '10+ years of experience in fitness training and nutrition'
     },
     {
-      name: 'Mike Rodriguez',
+      name: 'Sukhpreet Singh',
       role: 'Strength & Conditioning Coach',
-      image: 'https://images.pexels.com/photos/3490348/pexels-photo-3490348.jpeg?auto=compress&cs=tinysrgb&w=400&h=400&fit=crop',
-      bio: 'Former professional athlete with expertise in performance training'
+      // image: 'https://images.pexels.com/photos/3490348/pexels-photo-3490348.jpeg?auto=compress&cs=tinysrgb&w=400&h=400&fit=crop',
+bio: (
+  <>
+    SIS30321 Certificate III in Fitness<br />
+    SIS40221 Certificate IV in Fitness<br />
+    11046NAT Certificate IV in Nutrition
+  </>
+)
     },
     {
-      name: 'Emily Chen',
+      name: 'Lovepreet Singh',
       role: 'Yoga & Wellness Instructor',
-      image: 'https://images.pexels.com/photos/3823322/pexels-photo-3823322.jpeg?auto=compress&cs=tinysrgb&w=400&h=400&fit=crop',
       bio: 'Certified yoga instructor specializing in mindfulness and flexibility'
     }
   ];
