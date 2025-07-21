@@ -148,7 +148,7 @@ const Auth: React.FC = () => {
               : isResetMode
               ? 'Send Reset Email'
               : isSignUp
-              ? 'Send Magic Link'
+              ? 'Sign Up'
               : 'Login'}
           </button>
 

@@ -40,12 +40,13 @@ const Footer: React.FC = () => {
   ];
 
   const services = [
-    'Personal Training',
-    'Group Classes',
-    'Nutrition Counseling',
-    'Fitness Assessment',
-    'Recovery Therapy',
-    'Sauna & Spa'
+     'Personal trainer consultation',
+      'Nutrition guidance',
+      'Custom Fat Loss Programs',
+     ' Personalised Workout Plans',
+      'Online Coaching & Consultation',
+     ' Nutrition Guidance & Meal Plans',
+      'WhatsApp Daily check-ins'
   ];
 
   return (
@@ -131,7 +132,7 @@ const Footer: React.FC = () => {
                 <Clock className="h-5 w-5 text-[#d98e38] mt-0.5 flex-shrink-0" />
                 <div className="text-gray-300">
                   <div>Mon-Fri</div>
-                  <div>24x7 For Clients </div>
+                  <div>24/7 For Clients </div>
                 </div>
               </div>
             </div>
