@@ -47,7 +47,7 @@ const Auth: React.FC = () => {
         const { error } = await supabase.auth.signInWithOtp({
           email,
           options: {
-            emailRedirectTo: 'http://localhost:5173/set-password',
+           emailRedirectTo: 'https://my-fitness-app.vercel.app/set-password',
           },
         });
         if (error) throw error;
