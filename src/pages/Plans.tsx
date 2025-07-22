@@ -4,7 +4,7 @@ import { Check, Star } from 'lucide-react';
 import { plans } from '../data/plans';
 
 const Plans: React.FC = () => {
-  const selectedPlan = plans.find((plan) => plan.id === 'premium'); // You can change to 'basic' or 'elite'
+  const selectedPlan = plans.find((plan) => plan.id === 'premium'); // You can change this if needed
 
   if (!selectedPlan) return null;
 
@@ -23,23 +23,26 @@ const Plans: React.FC = () => {
       {/* Single Centered Plan Card */}
       <section className="flex justify-center items-center">
         <div
-          className={`relative w-full max-w-md bg-[#21332a] rounded-2xl p-8 transition-all duration-300 ring-2 ring-[#d98e38]`}
+          className="relative w-full max-w-md bg-[#21332a] rounded-2xl p-8 transition-all duration-300 ring-2 ring-[#d98e38]"
         >
           {selectedPlan.popular && (
             <div className="absolute -top-4 left-1/2 transform -translate-x-1/2">
               <div className="bg-[#d98e38] text-black px-4 py-1 rounded-full text-sm font-semibold flex items-center">
                 <Star className="h-4 w-4 mr-1" />
-                One-Time Payment
+                One-Time Payment, Lifetime Coaching
               </div>
             </div>
           )}
 
-          <div className="text-center mb-8">
+          <div className="text-center mb-6">
             <h3 className="text-2xl font-bold mb-2">{selectedPlan.name}</h3>
-            <div className="flex items-baseline justify-center">
+            <div className="flex items-baseline justify-center mb-2">
               <span className="text-4xl font-bold text-[#d98e38]">${selectedPlan.price}</span>
               <span className="text-gray-400 ml-2">/{selectedPlan.duration}</span>
             </div>
+            <p className="text-sm text-gray-400 max-w-sm mx-auto leading-relaxed">
+              A complete lifetime coaching system to stay <strong className="text-white">peaceful</strong>, <strong className="text-white">lean</strong>, <strong className="text-white">strong</strong> & <strong className="text-white">healthy</strong> — forever.
+            </p>
           </div>
 
           <ul className="space-y-4 mb-8">

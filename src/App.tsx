@@ -8,8 +8,8 @@ import Home from './pages/Home';
 import About from './pages/About';
 import Plans from './pages/Plans';
 import Payment from './pages/Payment';
-import Auth from './pages/Auth';
-import SetPassword from './pages/SetPassword';
+// import Auth from './pages/Auth';
+// import SetPassword from './pages/SetPassword';
 
 // Scroll to top on route change
 const ScrollToTop: React.FC = () => {
@@ -31,8 +31,8 @@ const AppRoutes: React.FC = () => (
       <Route path="/about" element={<About />} />
       <Route path="/plans" element={<Plans />} />
       <Route path="/payment" element={<Payment />} />
-      <Route path="/auth" element={<Auth />} />
-      <Route path="/set-password" element={<SetPassword />} />
+      {/* <Route path="/auth" element={<Auth />} />
+      <Route path="/set-password" element={<SetPassword />} /> */}
 
     </Routes>
     <Footer />
