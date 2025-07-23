@@ -1,18 +1,18 @@
 import React, { useState } from 'react';
-import { supabase } from '../lib/supabase';
 import { useNavigate } from 'react-router-dom';
-import toast from 'react-hot-toast';
 import { Dumbbell, Moon, Sun } from 'lucide-react';
+import toast from 'react-hot-toast';
 
 const Auth: React.FC = () => {
   const navigate = useNavigate();
+
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [emailError, setEmailError] = useState('');
   const [passwordError, setPasswordError] = useState('');
   const [loading, setLoading] = useState(false);
   const [isResetMode, setIsResetMode] = useState(false);
-  const [isSignUp, setIsSignUp] = useState(true); // NEW
+  const [isSignUp, setIsSignUp] = useState(true);
   const [darkMode, setDarkMode] = useState(true);
 
   const validate = () => {
@@ -38,45 +38,22 @@ const Auth: React.FC = () => {
     if (!validate()) return;
     setLoading(true);
 
-    try {
+    setTimeout(() => {
       if (isResetMode) {
-        const { error } = await supabase.auth.resetPasswordForEmail(email);
-        if (error) throw error;
-        toast.success('Password reset email sent!');
+        toast.success('Password reset email would be sent (demo).');
       } else if (isSignUp) {
-        const { error } = await supabase.auth.signInWithOtp({
-          email,
-          options: {
-    emailRedirectTo: 'https://sukgarewalfitness.vercel.app/set-password',
-          },
-        });
-        if (error) throw error;
-        toast.success('Magic link sent! Check your email to verify and set password.');
+        toast.success('Magic link sign-up flow simulated.');
       } else {
-        const { data, error } = await supabase.auth.signInWithPassword({
-          email,
-          password,
-        });
-        if (error) throw error;
-
-        if (!data.user?.email_confirmed_at) {
-          await supabase.auth.signOut();
-          toast.error('Please confirm your email via the magic link first.');
-          return;
-        }
-
-        toast.success('Logged in successfully!');
+        toast.success('Logged in (demo).');
         navigate('/');
       }
-    } catch (err: any) {
-      toast.error(err.message || 'Something went wrong');
-    } finally {
+
       setLoading(false);
-    }
+    }, 1200);
   };
 
   return (
-    <div className={`${darkMode ? 'dark' : ''}`}>
+    <div className={darkMode ? 'dark' : ''}>
       <div className="min-h-screen flex items-center justify-center bg-[#1a2a24] dark:bg-white dark:text-black text-white px-4 sm:px-6 transition-colors duration-300">
         <form
           onSubmit={handleSubmit}
@@ -88,7 +65,6 @@ const Auth: React.FC = () => {
               type="button"
               onClick={() => setDarkMode(!darkMode)}
               className="text-[#d98e38] hover:scale-110 transition"
-              title="Toggle theme"
             >
               {darkMode ? <Sun /> : <Moon />}
             </button>
@@ -165,7 +141,7 @@ const Auth: React.FC = () => {
             </p>
           )}
 
-          {/* Mode Toggle */}
+          {/* Mode Switching */}
           <p className="text-sm text-center text-gray-300 dark:text-gray-600">
             {isResetMode ? (
               <>
